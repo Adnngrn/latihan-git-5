@@ -1,83 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Account Management</title>
 </head>
 <body>
-    <div style="display: flex; width: 50%; margin: auto; justify-content:space-around; border: 1px solid black;">
-        <div style="border-right: 1px solid black;">
-            <h4>Account Managment</h4>
-            <form>
-                <img src="AdnanGhaziRaushanNoor(2).jpg" alt="Profil" width="200" height="250"><br>
-                </label><input type="file" name="profil" id="">
-                <br><br>
-                <label for="">Old Password</label><br>
-                <input type="password" name="password" id="" placeholder="Old Password">
-                <br><br>
-                <label for="">New Password</label><br>
-                <input type="password" name="password" id="" placeholder="New Password">
-                <br><br><br>
-                <button>Change Password</button>
-            </form>
-        </div>
-    
-        <div>
-            <form>
-                <h4>Profile Information</h4>
-                <div style="display: flex; gap: 10%;">
-                    <div>
-                        <label for="">Username</label><br>
-                        <input type="text" name="" id="">
-                        <br><br>
-                        <label for="">Nickname</label><br>
-                        <input type="text" name="" id="">
-                        <br><br>
-                        <label for="">Last name</label><br>
-                        <input type="text" name="" id="">
-                        <br><br>
-                    </div>
-                    <div>
-                        <label for="">Firstname</label><br>
-                        <input type="text" name="" id="">
-                        <br><br>
-                        <label for="">Role</label><br>
-                        <select name="" id="">
-                            <option value="">Subscriber</option>
-                            <option value="">Admin</option>
-                        </select>
-                        <br><br>
-                        <label for="">Display Publicly as</label><br>
-                        <input type="text" name="" id="">
-                        <br><br>
-                        
-                    </div>
-                </div>
-                
-                <h4>Contact Info</h4>
-                <div  style="display: flex; gap: 10%;">
-                    <div>
-                        <label for="">Email (required)</label><br>
-                        <input type="email" name="" id="">
-                        <br><br>
-                        <label for="">Website</label><br>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div>
-                        <label for="">WhatsApp</label><br>
-                        <input type="tel" name="" id="">
-                        <br><br>
-                        <label for="">Telegram</label><br>
-                        <input type="tel" name="" id="">
-                    </div>
-                </div>
-    
-                <h4>About</h4>
-                <label for="">Biographical info</label><br>
-                <textarea name="" id="" style="width: 100%; height: 100px;">I am Adnan Ghazi, a vocational school graduate majoring in software engineering</textarea>
-            </form>
-        </div>
-    </div>
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <!-- Bagian Kiri -->
+            <td width="30%" valign="top">
+                <h3>Account Management</h3>
+                <table>
+                    <tr>
+                        <td align="center">
+                            <img src="AdnanGhaziRaushanNoor(2).jpg" alt="Profile Photo" width="150" height="180"><br><br>
+                            <button>Upload Photo</button>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <form>
+                    <label>Old Password</label><br>
+                    <input type="password"><br><br>
+
+                    <label>New Password</label><br>
+                    <input type="password"><br><br>
+
+                    <button>Change Password</button>
+                </form>
+            </td>
+
+            <!-- Bagian Kanan -->
+            <td width="70%" valign="top">
+                <h3>Profile Information</h3>
+                <table>
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" ></td>
+                        <td>First Name</td>
+                        <td><input type="text" ></td>
+                    </tr>
+                    <tr>
+                        <td>Nickname</td>
+                        <td><input type="text" ></td>
+                        <td>Role</td>
+                        <td>
+                            <select>
+                                <option selected>Subscriber</option>
+                                <option>Admin</option>
+                                <option>Editor</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" ></td>
+                        <td>Display Name Publicly as</td>
+                        <td><input type="text" ></td>
+                    </tr>
+                </table>
+
+                <h3>Contact Info</h3>
+                <table>
+                    <tr>
+                        <td>Email (required)</td>
+                        <td><input type="email" ></td>
+                        <td>WhatsApp</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td><input type="text" ></td>
+                        <td>Telegram</td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+
+                <h3>About the User</h3>
+                <label>Biographical Info</label><br>
+                <textarea rows="4" cols="100">
+I am Adnan Ghazi, a vocational school graduate majoring in software engineering
+                </textarea>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
